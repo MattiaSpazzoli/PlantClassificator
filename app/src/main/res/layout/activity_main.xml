@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    android:foregroundTint="#FFFFFF">
+
+    <Button
+        android:id="@+id/snap_button"
+        android:layout_width="422dp"
+        android:layout_height="99dp"
+        android:background="@drawable/background_button"
+        android:text="SNAP"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/outputTextView"
+        android:layout_width="298dp"
+        android:layout_height="97dp"
+        android:layout_gravity="center"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leafImageView" />
+
+    <ImageView
+        android:id="@+id/leafImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/detector_logo_green" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="358dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/leafImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@drawable/logo_scritta" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/availablePlantsButton"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="Show available plants"
+        android:textColor="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/snap_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
