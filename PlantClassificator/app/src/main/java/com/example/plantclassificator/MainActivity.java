@@ -135,7 +135,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 // Run inference
                 if (null != tflite) {
+                    long startTime = System.currentTimeMillis();
                     tflite.run(inputFeature0.getBuffer(), result);
+                    long endTime = System.currentTimeMillis();
+                    long timeElapsed = endTime - startTime;
+                    Log.d("MainActivityTempo", ""+timeElapsed);
                 }
             } catch (IOException e) {
                 Log.e("tfliteSupport", "Error reading model", e);
